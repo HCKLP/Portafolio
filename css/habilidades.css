@@ -1,0 +1,82 @@
+/* ------------------------------ Sección de Habilidades y Aficiones ------------------------------ */
+/* Sección General */
+.habilidades, .aficiones {
+    padding: 2rem; /* Espacio interno */
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center; /* Centrado de texto */
+    margin-bottom: 2rem; /* Espacio inferior entre secciones */
+    max-width: 80%;
+    margin: 0 auto; /* Centrado horizontal */
+    border-radius: 12px; /* Bordes redondeados para toda la sección */
+   
+}
+
+/* Título de Sección */
+.habilidades__titulo-principal, .aficiones__titulo-principal {
+    font-size: 3.0rem; /* Tamaño de fuente del título */
+    font-weight: bold;
+    color: #464646; /* Color del texto */
+    margin-top: 10px; /* Espacio entre el título y el subtítulo */
+    margin-bottom: 20px; /* Espacio entre el título y el subtítulo */
+}
+
+/* Título de Sección */
+.habilidades__titulo, .aficiones__titulo {
+    font-size: 2.0rem; /* Tamaño de fuente del título */
+    font-weight: bold;
+    color: #464646; /* Color del texto */
+    margin-top: 20px; /* Espacio entre el título y el subtítulo */
+    margin-bottom: 20px;  /* Espacio entre el título y el subtítulo */
+}
+
+/* Lista de Habilidades y Aficiones */
+.habilidades__lista, .aficiones__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Mínimo 150px por columna para una disposición en cards */
+    gap: 1.5rem; /* Espacio entre elementos */
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+}
+
+/* Estilos de cada elemento (tarjeta individual) */
+.habilidades__elemento, .aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #f9f9f9; /* Fondo de cada elemento */
+    border-radius: 10px; /* Bordes redondeados para las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de tarjeta */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animación para hover */
+    cursor: pointer;
+    text-align: center;
+}
+
+.habilidades__elemento:hover, .aficiones__elemento:hover {
+    transform: translateY(-5px); /* Levanta el elemento al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra más intensa en hover */
+}
+
+/* Icono en cada tarjeta */
+.habilidades__icono, .aficiones__icono {
+    width: 60px; /* Tamaño del icono */
+    height: 60px;
+    margin-bottom: 0.75rem; /* Espacio debajo del icono */
+    transition: transform 0.3s; /* Animación para agrandar el icono en hover */
+}
+
+.habilidades__elemento:hover .habilidades__icono, 
+.aficiones__elemento:hover .aficiones__icono {
+    transform: scale(1.1); /* Agranda el icono en hover */
+}
+
+/* Nombre del elemento */
+.habilidades__nombre, .aficiones__nombre {
+    font-size: 1.1rem; /* Tamaño del texto del nombre */
+    color: #333; /* Color del texto */
+    font-weight: 600; /* Negrita para el nombre */
+    margin-top: 0.5rem;
+}
+

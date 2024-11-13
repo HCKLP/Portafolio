@@ -1,0 +1,77 @@
+/* Ajuste para la sección de presentación */
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px; /* Espacio interno */
+    max-width: 100%; /* Ancho máximo */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f8f8f8; /* Color de fondo */
+}
+
+.presentacion__contenido {
+    flex: 1;
+    margin-right: 20px; /* Espacio entre el contenido de texto y la imagen */
+}
+
+.presentacion__titulo {
+    font-size: 3.0rem; /* Tamaño de fuente del título */
+    font-weight: bold;
+    color: #464646; /* Color del texto */
+    margin-bottom: 10px; /* Espacio entre el título y el subtítulo */
+    margin-left: 200px; /* Ajusta el valor según lo que necesites */
+    margin-top: 80px; /* Margen superior */
+}
+
+.presentacion__subtitulo {
+    font-size: 1.5rem; /* Tamaño de fuente del subtítulo */
+    color: #666666; /* Color del subtítulo */
+    margin-bottom: 15px; /* Espacio debajo del subtítulo */
+    margin-left: 200px;
+}
+
+.presentacion__foto {
+    flex-shrink: 0;
+    width: 350px; /* Ajusta el tamaño de la imagen */
+    height: 350px; /* Tamaño cuadrado de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Asegura que la imagen se recorte bien dentro del círculo */
+    margin-right: 200px; /* Ajusta el valor según lo que necesites */
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 200px;
+    gap: 15px; /* Espacio entre los enlaces de redes sociales */
+    font-size: 1.3rem;
+    margin-bottom: 80px; /* Margen inferior */
+}
+
+.redes__img {
+    color: #464646; /* Color de los enlaces */
+    text-decoration: none;
+}
+
+.redes__img:hover {
+    color: #007bff; /* Color de hover para los enlaces */
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .presentacion__contenido {
+        margin-right: 0;
+        margin-bottom: 20px; /* Espacio entre el texto y la imagen */
+    }
+
+    .presentacion__foto {
+        width: 150px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+        height: 150px;
+    }
+}

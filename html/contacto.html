@@ -1,0 +1,32 @@
+<!-- Sección de Contacto -->
+<section class="contacto" id="contacto">
+    <h2 class="contacto__titulo">Contacto</h2>
+    <div class="contacto__card">
+        <div class="contacto__contenido">
+            
+            <!-- Formulario -->
+            <div class="contacto__form">
+                <form class="contacto__formulario" id="contactoForm">
+                    <input class="contacto__campo" id="nombre" type="text" placeholder="Nombre">
+                    <span class="contacto__error" id="nombreError"></span> <!-- Mensaje de error para Nombre -->
+
+                    <input class="contacto__campo" id="email" type="email" placeholder="Correo Electrónico">
+                    <span class="contacto__error" id="emailError"></span> <!-- Mensaje de error para Email -->
+
+                    <input class="contacto__campo" id="asunto" type="text" placeholder="Asunto">
+                    <span class="contacto__error" id="asuntoError"></span> <!-- Mensaje de error para Asunto -->
+
+                    <textarea class="contacto__campo contacto__campo--textarea" id="mensaje" placeholder="Mensaje"></textarea>
+                    <span class="contacto__error" id="mensajeError"></span> <!-- Mensaje de error para Mensaje -->
+
+                    <button class="contacto__boton" type="submit" id="enviarBtn" disabled>Enviar</button>
+                </form>
+            </div>
+
+            <!-- Imagen -->
+            <div class="contacto__imagen">
+                <img src="/assets/contacto.webp" alt="Imagen de contacto">
+            </div>
+        </div>
+    </div>
+</section>

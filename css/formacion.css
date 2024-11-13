@@ -1,0 +1,55 @@
+/* ------------------------------ Sección de Formación ------------------------------ */
+.formacion {
+    padding: 2rem 2rem 4rem; /* Espacio interno */
+    background-color: #EAF2FD; /* Fondo azul claro */
+    text-align: center;
+    max-width: 100%; /* Ancho máximo para centrar la sección */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.formacion__titulo {
+    font-size: 3.0rem; /* Tamaño de fuente del título */
+    font-weight: bold;
+    color: #464646; /* Color del texto */
+    margin-bottom: 20px; /* Espacio entre el título y el subtítulo */
+}
+
+.formacion__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Diseño responsivo con mínimo 200px */
+    gap: 1.5rem; /* Espacio entre elementos */
+    margin-left: 150px;
+    margin-right: 190px;
+}
+
+.formacion__elemento {
+    background-color: #ffffff; /* Fondo de cada elemento */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1rem;
+    text-align: center; /* Centrado del contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animación para hover */
+    cursor: pointer;
+}
+
+.formacion__elemento:hover {
+    transform: translateY(-5px); /* Levanta el elemento al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
+}
+
+.formacion__icono {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem; /* Espacio entre el icono y el texto */
+}
+
+.formacion__nombre {
+    font-size: 1.2rem; /* Tamaño del texto del nombre */
+    color: #333; /* Color del texto */
+    font-weight: bold;
+    margin: 0;
+}
+
+.formacion__detalle {
+    color: #666; /* Color secundario */
+}

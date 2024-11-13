@@ -1,0 +1,30 @@
+/* ------------------------------ Sección Sobre mí ------------------------------ */
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 3rem 2rem; /* Espacio interno */
+    background-color: #EAF2FD; /* Fondo azul claro */
+    max-width: 100%; /* Ancho máximo para centrar la sección */
+    margin: 0 auto; /* Centrado horizontal */
+    gap: 10px; /* Espacio entre los elementos */
+    text-align: left !important; 
+}
+
+.sobre-mi__titulo {
+    font-size: 3.0rem; /* Tamaño de fuente del título */
+    font-weight: bold;
+    color: #464646; /* Color del texto */
+    margin-bottom: 10px; /* Espacio entre el título y el subtítulo */
+    margin-left: 200px; /* Ajusta el valor según lo que necesites */
+}
+
+.sobre-mi__texto {
+
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    max-width: 800px; /* Limita el ancho del texto para una mejor lectura */
+    margin: 0 auto 1rem; /* Centrado horizontal y espacio inferior *//* Justificación del texto */
+    margin-left: 200px;
+}
+

@@ -1,0 +1,173 @@
+/* Importa los estilos de cada sección */
+@import url('/css/aficiones.css');
+@import url('/css/contacto.css');
+@import url('/css/formacion.css');
+@import url('/css/habilidades.css');
+@import url('/css/presentacion.css');
+@import url('/css/proyectos.css');
+@import url('/css/sobre-mi.css');
+/* ------------------------------ Variables de color ------------------------------ */
+:root {
+    --color-de-fondo: #f8f8f8;
+    --color-primario: #333;
+    --color-secundario: #666;
+    --color-destacado: #007bff;
+}
+
+/* ------------------------------ Global Styles ------------------------------ */
+body {
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+    padding-top: 70px; 
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #464646; /* Color del texto */
+    margin-bottom: 1.5rem;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.2rem; /* Tamaño de fuente un poco más pequeño que el título */
+    line-height: 1.6; /* Espacio entre líneas para mejorar la legibilidad */
+    color: #5a5a5a; /* Color ligeramente más claro que el título para diferenciar */
+    margin-bottom: 20px; /* Espacio inferior para separar de otros elementos */
+    padding-left: 10px; /* Sangría a la izquierda para un efecto de alineación */
+    text-align: justify; /* Justificar el texto para una apariencia más pulida */
+}
+
+p strong {
+    color: #464646; /* Color de texto en negrita para resaltar */
+    font-weight: bold; /* Acentuar los ejemplos */
+}
+
+
+/* ------------------------------ Barra de Navegación Fija ------------------------------- */
+
+
+/* Estilo de la cabecera */
+.cabecera {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+/* Cambia el fondo de la cabecera al hacer scroll */
+.cabecera.scrolled {
+    background-color: #f8f8f8; /* Color de fondo después de hacer scroll */
+}
+
+/* Estilo de los enlaces de navegación */
+.navbar-nav .nav-link {
+    color: #333; /* Color de texto */
+    font-weight: 500;
+    padding: 8px 16px;
+    position: relative;
+    transition: color 0.3s ease; /* Transición de color suave */
+    font-size: 1.3rem; /* Tamaño de fuente del título */
+}
+
+/* Color de los enlaces al pasar el cursor */
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Cambia a un tono azul al hacer hover */
+}
+
+/* Subrayado animado en los enlaces al pasar el cursor */
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #007bff;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Expande el subrayado al 100% */
+}
+
+/* Estilo para el enlace activo */
+.navbar-nav .nav-link.active {
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Cambia el color del icono del toggler en dispositivos móviles */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="rgba(0, 123, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+/* ------------------------------ Footer ------------------------------ */
+.footer {
+    background-color: #f8f8f8; /* Fondo oscuro */
+    color: #ffffff; /* Texto en blanco */
+    padding: 1.5rem 0; /* Espaciado interno */
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer__contenido {
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer__enlaces {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__enlaces a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__enlaces a:hover {
+    color: #007bff; /* Cambia a azul en hover */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (min-width: 768px) {
+    .footer__contenido {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

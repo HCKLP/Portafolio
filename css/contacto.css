@@ -1,0 +1,128 @@
+/* ------------------------------ Sección de Contacto ------------------------------ */
+/* Sección de Contacto */
+.contacto {
+    padding: 2rem;
+    background-color: #EAF2FD; /* Fondo azul claro */
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contacto__titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #464646;
+    margin-bottom: 1rem;
+}
+
+/* Card principal */
+.contacto__card {
+    background-color: #ffffff; /* Fondo blanco para el card */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Limitar el ancho máximo del card principal */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenido dentro de la card (Formulario e Imagen) */
+.contacto__contenido {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around; /* Espacio uniforme entre formulario e imagen */
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Formulario */
+.contacto__form {
+    flex: 1;
+    max-width: 400px; /* Ancho máximo del formulario */
+    display: flex;
+    justify-content: center;
+}
+
+.contacto__formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Imagen */
+.contacto__imagen {
+    flex: 1;
+    max-width: 550px; /* Ancho máximo de la imagen */
+    display: flex;
+    justify-content: center;
+}
+
+.contacto__imagen img {
+    width: 100%;
+    max-width: 550px; /* Ajuste del tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Campos de Entrada y Área de Texto */
+.contacto__campo {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto__campo:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.contacto__campo--textarea {
+    min-height: 100px; /* Altura mínima para el textarea */
+    resize: vertical;
+}
+
+/* Botón de Enviar */
+.contacto__boton {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contacto__boton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.contacto__boton:active {
+    transform: scale(1);
+}
+
+.contacto__error {
+    color: #ff4d4d;
+    font-size: 0.875rem;
+    margin-top: 0.2rem;
+    display: block;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contacto__contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+}
